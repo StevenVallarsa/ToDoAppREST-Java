@@ -1,7 +1,5 @@
 package com.sv.todoapprest2022.data;
 
-
-import com.sv.todoapprest2022.data.ToDoDao;
 import com.sv.todoapprest2022.models.ToDo;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,8 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
@@ -24,6 +22,7 @@ import org.springframework.stereotype.Repository;
  * purpose: 
  */
 @Repository
+@Profile("database")
 public class ToDoDBDao implements ToDoDao {
     
     private final JdbcTemplate jdbc;

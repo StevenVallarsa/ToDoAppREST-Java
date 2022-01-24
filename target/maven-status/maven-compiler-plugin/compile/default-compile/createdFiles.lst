@@ -1,5 +1,7 @@
 com/sv/todoapprest2022/controllers/ToDoController.class
-com/sv/todoapprest2022/App.class
 com/sv/todoapprest2022/data/ToDoDao.class
+com/sv/todoapprest2022/data/ToDoDBDao$ToDoMapper.class
+com/sv/todoapprest2022/data/ToDoDBDao.class
+com/sv/todoapprest2022/App.class
 com/sv/todoapprest2022/data/ToDoInMemoryDao.class
 com/sv/todoapprest2022/models/ToDo.class
