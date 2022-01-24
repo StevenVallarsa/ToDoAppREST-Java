@@ -19,15 +19,33 @@
     </parent>
 
     <dependencies> 
-        <!--Spring Boot starter children. No versions needed.-->       
+        <!-- Spring Boot starter children - No versions needed -->
+        
+        <!-- Enables and configures Spring MVC -->       
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        
+        <!-- DB dependencies -->        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        
+        <!-- added for DB connection -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>         
+        </dependency>
+
+        <!-- Spring Boot Dev Tools -->        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
+        
+        
     </dependencies>    
 </project>
